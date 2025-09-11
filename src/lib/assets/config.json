@@ -1,0 +1,25 @@
+{
+	"site": {
+		"title": "cyrus chan",
+		"description": "ai & data engineer",
+		"author": "Cyrus Chan"
+	},
+	"pages": {
+		"home": {
+			"title": "cyrus chan",
+			"path": "/"
+		},
+		"about": {
+			"title": "about / cyrus chan",
+			"path": "/about"
+		},
+		"projects": {
+			"title": "projects / cyrus chan",
+			"path": "/projects"
+		},
+		"contact": {
+			"title": "contact / cyrus chan",
+			"path": "/contact"
+		}
+	}
+}

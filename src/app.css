@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+    /* https://colorhunt.co/palette/27374d526d829db2bfdde6ed */
+	--color-primary: #27374D;
+	--color-secondary: #DDE6ED;
+}
+
+body {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+}
