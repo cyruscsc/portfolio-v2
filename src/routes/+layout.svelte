@@ -2,6 +2,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { config } from '$lib';
+	import { Canvas } from '$lib/components';
 
 	let { children } = $props();
 </script>
@@ -13,4 +14,6 @@
 	<meta name="author" content={config.site.author} />
 </svelte:head>
 
-{@render children?.()}
+<Canvas>
+	{@render children?.()}
+</Canvas>

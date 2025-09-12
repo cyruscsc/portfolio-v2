@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import '@fontsource/titillium-web';
 
 @theme {
     /* https://colorhunt.co/palette/27374d526d829db2bfdde6ed */
@@ -9,4 +10,5 @@
 body {
 	background-color: var(--color-primary);
 	color: var(--color-secondary);
+	font-family: 'Titillium Web', sans-serif;
 }
