@@ -2,7 +2,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { config } from '$lib';
-	import { Canvas } from '$lib/components';
+	import { Canvas, Footer } from '$lib/components';
 
 	let { children } = $props();
 </script>
@@ -16,4 +16,5 @@
 
 <Canvas>
 	{@render children?.()}
+	<Footer />
 </Canvas>

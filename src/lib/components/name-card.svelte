@@ -4,9 +4,11 @@
 	import { Paragraph } from '$lib/components';
 </script>
 
-<div class="namecard">
+<div class="my-auto space-y-2 py-12">
 	<Title text={config.namecard.title} />
-	{#each config.namecard.paragraphs as paragraph}
-		<Paragraph text={paragraph} />
-	{/each}
+	<div class="space-y-2">
+		{#each config.namecard.paragraphs as paragraph}
+			<Paragraph text={paragraph} />
+		{/each}
+	</div>
 </div>

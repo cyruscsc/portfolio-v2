@@ -2,4 +2,4 @@
 	let { text } = $props();
 </script>
 
-<h1 class="text-3xl py-2">{text}</h1>
+<h1 class="py-2 text-3xl leading-8">{text}</h1>

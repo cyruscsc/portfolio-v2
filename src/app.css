@@ -1,10 +1,12 @@
 @import 'tailwindcss';
 @import '@fontsource/titillium-web';
+@import '@fontsource/titillium-web/300.css';
+@import '@fontsource/titillium-web/400.css';
 
 @theme {
-    /* https://colorhunt.co/palette/27374d526d829db2bfdde6ed */
-	--color-primary: #27374D;
-	--color-secondary: #DDE6ED;
+	/* https://colorhunt.co/palette/222831393e46948979dfd0b8 */
+	--color-primary: #393e46;
+	--color-secondary: #dfd0b8;
 }
 
 body {

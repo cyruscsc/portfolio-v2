@@ -2,4 +2,4 @@
 	let { text } = $props();
 </script>
 
-<p class="mb-1">{text}</p>
+<p class="text-sm leading-4 font-light">{text}</p>
