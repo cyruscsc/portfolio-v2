@@ -1,6 +1,6 @@
 <script>
 	import { config } from '$lib';
-	import { NameCard, QuoteCard, Home } from '$lib/components';
+	import { NameCard, Home } from '$lib/components';
 </script>
 
 <svelte:head>
@@ -9,5 +9,4 @@
 
 <Home>
 	<NameCard />
-	<QuoteCard />
 </Home>

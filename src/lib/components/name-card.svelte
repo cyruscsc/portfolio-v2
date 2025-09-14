@@ -4,7 +4,7 @@
 	import { Paragraph } from '$lib/components';
 </script>
 
-<div class="my-auto space-y-2 py-12">
+<div class="my-auto space-y-2 py-12 lg:max-w-1/2">
 	<Title text={config.namecard.title} />
 	<div class="space-y-2">
 		{#each config.namecard.paragraphs as paragraph}
