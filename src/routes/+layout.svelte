@@ -2,7 +2,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { config } from '$lib';
-	import { Canvas, Footer } from '$lib/components';
+	import { AppContainer, MainContainer, Footer, NavMenu, ContentContainer } from '$lib/components';
 
 	let { children } = $props();
 </script>
@@ -14,7 +14,12 @@
 	<meta name="author" content={config.site.author} />
 </svelte:head>
 
-<Canvas>
-	{@render children?.()}
+<AppContainer>
+	<MainContainer>
+		<ContentContainer>
+			{@render children?.()}
+		</ContentContainer>
+		<NavMenu />
+	</MainContainer>
 	<Footer />
-</Canvas>
+</AppContainer>

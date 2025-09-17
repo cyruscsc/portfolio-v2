@@ -8,6 +8,14 @@
 		"home": {
 			"title": "cyrus chan",
 			"path": "/"
+		},
+		"about": {
+			"title": "about / cyrus chan",
+			"path": "/about"
+		},
+		"contact": {
+			"title": "contact / cyrus chan",
+			"path": "/contact"
 		}
 	},
 	"namecard": {
