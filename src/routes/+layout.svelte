@@ -3,8 +3,13 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { config } from '$lib';
 	import { AppContainer, MainContainer, Footer, NavMenu, ContentContainer } from '$lib/components';
+	import { setActive, setConfig } from '$lib/context';
 
 	let { children } = $props();
+	let active = $state({ path: '' });
+
+	setActive(active);
+	setConfig(config);
 </script>
 
 <svelte:head>

@@ -1,25 +1,21 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { config } from '$lib';
-	let pages = $state(Object.entries(config.pages));
-	let active = $state('');
+	import { getActive, getConfig } from '$lib/context';
 
-	onMount(() => {
-		active = window.location.pathname;
-	});
+	const config = getConfig();
+	const active = getActive();
 </script>
 
 <nav>
 	<ul class="hidden h-full w-full flex-col items-end justify-center gap-2 text-right lg:flex">
-		{#each pages as [name, page]}
+		{#each Object.entries(config.pages) as [name, page]}
 			<li class="text-sm font-light">
-				{#if active === page.path}
-					<a href={page.path} class="pointer-events-none cursor-default opacity-75">
+				{#if active.path === page.path}
+					<a href={page.path} class="pointer-events-none cursor-default">
 						{name}
-						<span>&#9675;</span>
+						<span>&#9679;</span>
 					</a>
 				{:else}
-					<a href={page.path} class="hover:underline">
+					<a href={page.path} class="cursor-pointer opacity-50 duration-300 hover:opacity-75">
 						{name}
 						<span>&#9675;</span>
 					</a>
