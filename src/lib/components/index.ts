@@ -10,3 +10,4 @@ export { default as MainContainer } from './main-container.svelte';
 export { default as ContentContainer } from './content-container.svelte';
 export { default as ContactCard } from './contact-card.svelte';
 export { default as Link } from './link.svelte';
+export { default as Card } from './card.svelte';
