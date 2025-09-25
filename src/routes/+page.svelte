@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { NameCard, Home } from '$lib/components';
+	import { NameCard } from '$lib/components';
 	import { getActive, getConfig } from '$lib/context';
 
 	const config = getConfig();
@@ -15,6 +15,4 @@
 	<title>{config.pages.home.title}</title>
 </svelte:head>
 
-<Home>
-	<NameCard />
-</Home>
+<NameCard />

@@ -30,6 +30,9 @@
 			"It always seems impossible until it’s done.",
 			"Yesterday is history, tomorrow is a mystery, but today is a gift."
 		],
+		"contact": ["Feel free to connect with me via the links below."],
+		"github": "https://github.com/cyruscsc",
+		"linkedin": "https://www.linkedin.com/in/cyruscsc/",
 		"footer": ["Based in Toronto.", "Working remotely worldwide."],
 		"copyright": "&copy; cyrus chan"
 	}

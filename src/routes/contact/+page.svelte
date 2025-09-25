@@ -1,4 +1,5 @@
 <script>
+	import { ContactCard } from '$lib/components';
 	import { getActive, getConfig } from '$lib/context';
 	import { onMount } from 'svelte';
 
@@ -13,3 +14,5 @@
 <svelte:head>
 	<title>{config.pages.contact.title}</title>
 </svelte:head>
+
+<ContactCard />
