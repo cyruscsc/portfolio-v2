@@ -53,7 +53,7 @@ export default function CoursesSection() {
                     {course.description}
                   </p>
                 )}
-                {course.links && course.links.length > 0 && (
+                {/* {course.links && course.links.length > 0 && (
                   <div className="mt-1 flex flex-row flex-wrap items-start gap-2">
                     {course.links.map((link, idx) => (
                       <Link
@@ -69,7 +69,7 @@ export default function CoursesSection() {
                       </Link>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
             </TimelineItem>
           ))}

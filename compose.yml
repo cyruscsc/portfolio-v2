@@ -1,0 +1,16 @@
+services:
+  next-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
